@@ -63,3 +63,5 @@ end
 gem 'kaminari', :git => "git://github.com/amatsuda/kaminari.git", :branch => 'master'
 
 gem 'simple_form'
+
+gem "font_awesome_rails"
