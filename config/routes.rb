@@ -6,6 +6,8 @@ Rails.application.routes.draw do
 
       resources :comments, only: :create
 
+      # resources :comments, only: :edit
+
     end
   
 end
