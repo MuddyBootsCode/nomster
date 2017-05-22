@@ -10,7 +10,7 @@
     <div class="col-10 offset-1">
       <% if place.photo.present? %>
       
-        <%= image_tag place.photos.last.picture, :class => 'img-fluid' %>
+        <%= image_tag place.photo.last.picture, :class => 'img-fluid' %>
         
       <% end %>
     </div>
