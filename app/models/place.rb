@@ -2,7 +2,7 @@ class Place < ApplicationRecord
   
   belongs_to :user 
   has_many :comments, dependent: :destroy
-  has_many :photo
+  has_many :photo, dependent: :destroy
 
 
   validates :name, :description, :address,  presence: true
