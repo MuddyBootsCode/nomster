@@ -1,10 +1,25 @@
 <div class="booyah-box col-10 offset-1">
-  <h1>Edit Your Place</h1>
+  <h1>Edit your place details</h1>
+  <hr />
     <%= simple_form_for @place do |f| %>
-      <%= f.input :name %>
-      <%= f.input :address %>
-      <%= f.input :description %>
+    
+    <form class="review">
+      <div class="form-group">
+          <label for="exampleInputEmail1">Name</label>
+          <%= f.input :name, label: false, placeholder: 'Restaurant Name', input_html: { class: 'form-control'} %>
+      </div>
+      <div class="form">
+        <label for="address">Address</label>
+          <%= f.input :address, label: false, placeholder: 'ex: 1111 Joe LN', input_html: { class: 'form-control'} %>
+      </div>
+      <div class="form-group">
       <br />
-      <%= f.submit 'Update', class: 'btn btn-primary' %>
+        <label for="Details">Restaurant Details</label>
+          <%= f.input :description, label: false, placeholder: 'Your initial review here', input_html: { class: 'form-control'} %>
+      </div>
+          <br />
+          <%= f.submit 'Update', class: 'btn btn-outline-info' %>
+
     <% end %>
+    </form>
 </div>
